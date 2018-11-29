@@ -5,8 +5,8 @@ using UnityEngine;
 public class ColourGenerator
 {
 
-    ColourSettings settings;
-    Texture2D texture;
+    public ColourSettings settings;
+    public Texture2D texture;
     const int textureResolution = 50;
     INoiseFilter biomeNoiseFilter;
 
@@ -15,7 +15,7 @@ public class ColourGenerator
         this.settings = settings;
         if (texture == null || texture.height != settings.biomeColourSettings.biomes.Length)
         {
-            texture = new Texture2D(textureResolution, settings.biomeColourSettings.biomes.Length);
+            texture = new Texture2D(textureResolution, settings.biomeColourSettings.biomes.Length, TextureFormat.RGBA32, false);
         }
         biomeNoiseFilter = NoiseFilterFactory.CreateNoiseFilter(settings.biomeColourSettings.noise);
     }

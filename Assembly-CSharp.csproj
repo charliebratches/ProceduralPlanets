@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{3A18A362-B191-41BF-7E92-894175642275}</ProjectGuid>
+    <ProjectGuid>{406A7001-2492-7346-BBF9-8934B9C66789}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,6 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ApplyTexture.cs" />
+    <Compile Include="Assets\ClickEvents.cs" />
     <Compile Include="Assets\ColourGenerator.cs" />
     <Compile Include="Assets\ColourSettings.cs" />
     <Compile Include="Assets\ConditionalHideAttribute.cs" />
@@ -71,45 +73,48 @@
     <Compile Include="Assets\NoiseSettings.cs" />
     <Compile Include="Assets\Planet.cs" />
     <Compile Include="Assets\RidgidNoiseFilter.cs" />
+    <Compile Include="Assets\RotateAtmosphere.cs" />
+    <Compile Include="Assets\RotatePlanet.cs" />
     <Compile Include="Assets\ShapeGenerator.cs" />
     <Compile Include="Assets\ShapeSettings.cs" />
     <Compile Include="Assets\SimpleNoiseFilter.cs" />
     <Compile Include="Assets\TerrainFace.cs" />
+    <None Include="Assets\Resources\$self_illuminated_outlined_diffuse_113.shader" />
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>C:/Users/charl/OneDrive/Documents/Procedural Planet E05/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>C:/Users/charl/OneDrive/Documents/PlanetRepo/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>C:/Users/charl/OneDrive/Documents/Procedural Planet E05/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>C:/Users/charl/OneDrive/Documents/PlanetRepo/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/charl/OneDrive/Documents/Procedural Planet E05/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/charl/OneDrive/Documents/PlanetRepo/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/charl/OneDrive/Documents/Procedural Planet E05/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/charl/OneDrive/Documents/PlanetRepo/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
-      <HintPath>C:/Users/charl/OneDrive/Documents/Procedural Planet E05/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
+      <HintPath>C:/Users/charl/OneDrive/Documents/PlanetRepo/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
-      <HintPath>C:/Users/charl/OneDrive/Documents/Procedural Planet E05/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
+      <HintPath>C:/Users/charl/OneDrive/Documents/PlanetRepo/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/charl/OneDrive/Documents/Procedural Planet E05/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/charl/OneDrive/Documents/PlanetRepo/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/charl/OneDrive/Documents/Procedural Planet E05/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>C:/Users/charl/OneDrive/Documents/PlanetRepo/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/charl/OneDrive/Documents/Procedural Planet E05/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>C:/Users/charl/OneDrive/Documents/PlanetRepo/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>C:/Users/charl/OneDrive/Documents/Procedural Planet E05/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>C:/Users/charl/OneDrive/Documents/PlanetRepo/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/charl/OneDrive/Documents/Procedural Planet E05/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/charl/OneDrive/Documents/PlanetRepo/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.IncludePaths">
-      <HintPath>C:/Users/charl/OneDrive/Documents/Procedural Planet E05/Library/ScriptAssemblies/Unity.RenderPipelines.Core.IncludePaths.dll</HintPath>
+      <HintPath>C:/Users/charl/OneDrive/Documents/PlanetRepo/Library/ScriptAssemblies/Unity.RenderPipelines.Core.IncludePaths.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
